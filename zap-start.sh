@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/share/zaproxy/zap.sh -daemon -addoninstall packscanrules -addoninstall graphql -addoninstall importurls -addoninstall reports -addoninstall reflect -addoninstall openapi -addoninstall sqliplugin -addoninstall spiderAjax -addoninstall packpentester -config api.key=zap-apikey-1337 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
