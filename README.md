@@ -1,6 +1,6 @@
 # 101 OWASP ZAP API
 
-## Requerimientos 
+## Requerimientos
 
 ### Targets
 
@@ -21,10 +21,17 @@ docker run --rm -it -p 3000:80 vulnerables/web-dvwa
 vagrant init kalilinux/rolling
 vagrant up
 
-#### Instalar owasp pip lib
+#### Instalar python Virtual Env
 
-pip install python-owasp-zap-v2.4
-
+python3 -m pip install --upgrade pip
+pip3 install virtualenv
+pip3 install --upgrade setuptools
+which python3
+which virtualenv
+cd directorio/projecto/
+virtualenv -p /usr/bin/python3 venv-zap
+source venv-zap/bin/activate
+pip3 install -r requirements.txt
 
 ### OWASP ZAP DAEMON MODE
 
