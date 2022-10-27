@@ -20,20 +20,22 @@ docker run --rm -it -p 3000:80 vulnerables/web-dvwa
 
 ### KALI LINUX
 
-vagrant init kalilinux/rolling
-vagrant up
+- vagrant init kalilinux/rolling
+- vagrant up
+- vagrant ssh
+- sudo apt install zaproxy
 
 #### Instalar python Virtual Env
 
-python3 -m pip install --upgrade pip
-pip3 install virtualenv
-pip3 install --upgrade setuptools
-which python3
-which virtualenv
-cd directorio/projecto/
-virtualenv -p /usr/bin/python3 venv-zap
-source venv-zap/bin/activate
-pip3 install -r requirements.txt
+- python3 -m pip install --upgrade pip
+- pip3 install virtualenv
+- pip3 install --upgrade setuptools
+- which python3
+- which virtualenv
+- cd directorio/projecto/
+- virtualenv -p /usr/bin/python3 venv-zap
+- source venv-zap/bin/activate
+- pip3 install -r requirements.txt
 
 ### OWASP ZAP DAEMON MODE
 
