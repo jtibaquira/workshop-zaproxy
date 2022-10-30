@@ -18,6 +18,17 @@ docker run --rm -p 8090:8080 -i -t psiinon/bodgeit
 
 docker run --rm -it -p 3000:80 vulnerables/web-dvwa
 
+#### DVGA
+
+docker pull dolevf/dvga
+
+docker run -t -p 5013:5013 -e WEB_HOST=0.0.0.0 dolevf/dvga
+
+En el navegador http://localhost:5013
+
+#### vAPI
+
+docker-compose up -d
 ### KALI LINUX
 
 - vagrant init kalilinux/rolling
