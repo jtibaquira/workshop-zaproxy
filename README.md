@@ -34,6 +34,8 @@ En el navegador http://localhost:5013
 
 #### vAPI
 
+git clone https://github.com/roottusk/vapi.git
+
 cd vapi/
 
 docker-compose build
