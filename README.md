@@ -8,13 +8,19 @@ Estos son algunos de los targets que se van a usar para las pruebas con la API
 
 #### JUICE SHOP
 
+docker pull bkimminich/juice-shop
+
 docker run --rm -p 3000:3000 bkimminich/juice-shop
 
 #### BODGEIT
 
+docker pull psiinon/bodgeit
+
 docker run --rm -p 8090:8080 -i -t psiinon/bodgeit
 
 #### DVWA
+
+docker pull vulnerables/web-dvwa
 
 docker run --rm -it -p 3000:80 vulnerables/web-dvwa
 
@@ -28,7 +34,28 @@ En el navegador http://localhost:5013
 
 #### vAPI
 
+cd vapi/
+
+docker-compose build
+
 docker-compose up -d
+
+#### Petstore3
+
+docker pull swaggerapi/petstore3:unstable
+
+docker run  --name swaggerapi-petstore3 -d -p 8080:8080 swaggerapi/petstore3:unstable
+
+### GraphQL Example
+
+git clone https://github.com/marmelab/GraphQL-example.git
+
+cd GraphQL-example/
+
+make
+
+make run-server
+
 ### KALI LINUX
 
 - vagrant init kalilinux/rolling
